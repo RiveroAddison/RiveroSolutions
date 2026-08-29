@@ -1,0 +1,1204 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Rivero Solution ofrece soporte tecnológico, redes, seguridad, servidores y CCTV para personas y pequeñas empresas en Venezuela."
+    />
+    <meta name="theme-color" content="#071b33" />
+    <title>Rivero Solution | Soporte tecnológico nivel 2</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: {
+                DEFAULT: "#071b33",
+                soft: "#36526e",
+                dark: "#041326",
+              },
+              brand: {
+                blue: "#1261d6",
+                "blue-dark": "#0b3f99",
+                cyan: "#1bc7d8",
+                lime: "#c8ef68",
+                paper: "#f4f8fc",
+                line: "#d8e4ef",
+              },
+            },
+            fontFamily: {
+              sans: ['"Trebuchet MS"', '"Segoe UI"', "sans-serif"],
+              serif: ["Georgia", '"Times New Roman"', "serif"],
+              mono: ["Consolas", "monospace"],
+            },
+            boxShadow: {
+              custom: "0 20px 55px rgba(7, 27, 51, .12)",
+              terminal: "0 24px 50px rgba(0,0,0,.28)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-brand-paper text-ink font-sans leading-relaxed">
+    <header
+      class="sticky top-0 z-10 bg-[rgba(244,248,252,0.92)] border-b border-[rgba(216,228,239,0.8)] backdrop-blur-md"
+    >
+      <div
+        class="max-w-[1160px] w-[calc(100%-40px)] max-sm:w-[calc(100%-28px)] mx-auto flex items-center justify-between min-h-[76px] max-sm:min-h-[68px]"
+      >
+        <a
+          class="flex items-center gap-[11px] font-black tracking-tight"
+          href="#inicio"
+          aria-label="Rivero Solution, inicio"
+        >
+          <span
+            class="grid w-9 h-9 place-items-center text-ink bg-brand-lime rounded-[9px] text-[1.1rem]"
+            >R</span
+          >
+          <span>RIVERO SOLUTION</span>
+        </a>
+
+        <nav
+          class="hidden sm:flex items-center gap-[25px] text-[0.9rem] font-bold max-sm:absolute max-sm:top-[68px] max-sm:right-[14px] max-sm:left-[14px] max-sm:flex-col max-sm:items-stretch max-sm:gap-0 max-sm:p-[10px] max-sm:bg-white max-sm:border max-sm:border-brand-line max-sm:rounded-lg max-sm:shadow-custom [&.open]:flex"
+          id="main-nav"
+          aria-label="Navegación principal"
+        >
+          <a
+            href="#servicios"
+            class="max-sm:p-3 hover:text-brand-blue"
+            data-es="Servicios"
+            data-en="Services"
+            >Servicios</a
+          >
+          <a
+            href="#planes"
+            class="max-sm:p-3 hover:text-brand-blue"
+            data-es="Planes"
+            data-en="Plans"
+            >Planes</a
+          >
+          <a
+            href="#confianza"
+            class="max-sm:p-3 hover:text-brand-blue"
+            data-es="Confianza"
+            data-en="Trust"
+            >Confianza</a
+          >
+          <a
+            href="#contacto"
+            class="max-sm:p-3 hover:text-brand-blue"
+            data-es="Contacto"
+            data-en="Contact"
+            >Contacto</a
+          >
+        </nav>
+
+        <div class="flex items-center gap-2 max-sm:ml-auto max-sm:mr-2">
+          <select
+            class="p-2 text-ink bg-transparent border border-brand-line rounded-md text-[0.78rem] font-bold outline-none"
+            id="currency"
+            aria-label="Seleccionar moneda"
+          >
+            <option value="USD">USD</option>
+            <option value="VES">VES</option>
+          </select>
+          <select
+            class="p-2 text-ink bg-transparent border border-brand-line rounded-md text-[0.78rem] font-bold outline-none"
+            id="language"
+            aria-label="Seleccionar idioma"
+          >
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </select>
+          <button
+            class="hidden max-sm:block p-2 text-ink bg-transparent border border-brand-line rounded-md"
+            id="menu-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="relative overflow-hidden py-[100px] max-sm:py-[75px] max-sm:pb-[65px] bg-ink text-white"
+        id="inicio"
+      >
+        <div
+          class="absolute w-[540px] h-[540px] -right-[130px] -top-[240px] border border-[rgba(27,199,216,0.35)] rounded-full shadow-[0_0_0_42px_rgba(27,199,216,0.05),0_0_0_84px_rgba(27,199,216,0.04)] pointer-events-none"
+        ></div>
+
+        <div
+          class="max-w-[1160px] w-[calc(100%-40px)] max-sm:w-[calc(100%-28px)] mx-auto grid grid-cols-[1.05fr_0.95fr] max-md:grid-cols-1 items-center gap-[70px] max-md:gap-[45px]"
+        >
+          <div class="animate-[rise_0.7s_both]">
+            <p
+              class="mb-[12px] text-brand-cyan text-[0.76rem] font-extrabold tracking-[0.13em] uppercase"
+              data-es="Help Desk nivel 2 · Venezuela"
+              data-en="Level 2 Help Desk · Venezuela"
+            >
+              Help Desk nivel 2 · Venezuela
+            </p>
+            <h1
+              class="relative max-w-[690px] mb-[22px] font-serif text-[clamp(3rem,7vw,6.5rem)] max-sm:text-[clamp(2.8rem,16vw,4.5rem)] leading-[1.08] tracking-[-0.04em]"
+              data-es="La tecnología debe trabajar para ti."
+              data-en="Technology should work for you."
+            >
+              La tecnología debe trabajar para ti.
+            </h1>
+            <p
+              class="max-w-[570px] text-[#bdd0e3] text-[1.1rem]"
+              data-es="Soporte técnico claro, cercano y resolutivo para personas y pequeñas empresas. Mantenemos tus sistemas conectados, seguros y listos para avanzar."
+              data-en="Clear, approachable and effective technical support for people and small businesses. We keep your systems connected, secure and ready to move forward."
+            >
+              Soporte técnico claro, cercano y resolutivo para personas y
+              pequeñas empresas. Mantenemos tus sistemas conectados, seguros y
+              listos para avanzar.
+            </p>
+            <div class="flex flex-wrap gap-[12px] mt-[30px]">
+              <a
+                class="inline-flex items-center justify-center gap-[9px] min-h-[48px] px-5 text-[0.94rem] font-extrabold rounded-[7px] text-white bg-brand-blue hover:bg-brand-blue-dark hover:-translate-y-0.5 transition-all"
+                href="#contacto"
+                data-es="Solicitar soporte →"
+                data-en="Request support →"
+                >Solicitar soporte →</a
+              >
+              <a
+                class="inline-flex items-center justify-center gap-[9px] min-h-[48px] px-5 text-[0.94rem] font-extrabold rounded-[7px] text-white bg-transparent border border-[#44617e] hover:border-brand-blue hover:-translate-y-0.5 transition-all"
+                href="#planes"
+                data-es="Ver planes"
+                data-en="View plans"
+                >Ver planes</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="relative min-h-[380px] p-[28px] bg-gradient-to-br from-[#10335d] to-[#0a233f] border border-[#284c72] rounded-[20px] shadow-custom max-md:w-full max-md:max-w-[620px]"
+            aria-label="Panel visual de monitoreo tecnológico"
+          >
+            <div
+              class="absolute inset-[28px] p-[25px] bg-[#061426] border border-[#31587d] rounded-[12px] font-mono text-[0.78rem] shadow-terminal"
+            >
+              <div class="flex gap-[6px] mb-[35px]">
+                <i class="w-2 h-2 bg-brand-cyan rounded-full opacity-80"></i>
+                <i class="w-2 h-2 bg-brand-cyan rounded-full opacity-80"></i>
+                <i class="w-2 h-2 bg-brand-cyan rounded-full opacity-80"></i>
+              </div>
+              <p class="my-[13px] text-[#8ca9c2]">
+                <span class="text-brand-lime">rivero@solution</span>:~$ status
+                --all
+              </p>
+              <p class="my-[13px] text-[#8ca9c2]">
+                servers ........
+                <span class="text-brand-lime">operational</span>
+              </p>
+              <p class="my-[13px] text-[#8ca9c2]">
+                network ........ <span class="text-brand-lime">protected</span>
+              </p>
+              <p class="my-[13px] text-[#8ca9c2]">
+                remote support . <span class="text-brand-lime">available</span>
+              </p>
+              <p class="my-[13px] text-[#8ca9c2]">
+                <span class="text-brand-lime">ready_to_help = true</span>
+              </p>
+            </div>
+            <div
+              class="absolute -right-[17px] bottom-[25px] p-[11px_14px] text-ink bg-brand-lime rounded-[6px] text-[0.76rem] font-black shadow-[0_12px_28px_rgba(0,0,0,0.2)]"
+              data-es="● SISTEMAS EN ORDEN"
+              data-en="● SYSTEMS ONLINE"
+            >
+              ● SISTEMAS EN ORDEN
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-brand-lime">
+        <div
+          class="max-w-[1160px] w-[calc(100%-40px)] max-sm:w-[calc(100%-28px)] mx-auto grid grid-cols-3 max-sm:grid-cols-1 gap-[22px] max-sm:gap-[15px] py-[22px]"
+        >
+          <div class="flex items-center gap-[12px] text-[0.87rem] font-bold">
+            <strong
+              class="block font-serif text-[1.55rem]"
+              data-es="10 años"
+              data-en="10 years"
+              >10 años</strong
+            >
+            <span data-es="de experiencia" data-en="of experience"
+              >de experiencia</span
+            >
+          </div>
+          <div class="flex items-center gap-[12px] text-[0.87rem] font-bold">
+            <strong
+              class="block font-serif text-[1.55rem]"
+              data-es="Rápido"
+              data-en="Fast"
+              >Rápido</strong
+            >
+            <span data-es="tiempo de respuesta" data-en="response time"
+              >tiempo de respuesta</span
+            >
+          </div>
+          <div class="flex items-center gap-[12px] text-[0.87rem] font-bold">
+            <strong
+              class="block font-serif text-[1.55rem]"
+              data-es="24/7"
+              data-en="24/7"
+              >24/7</strong
+            >
+            <span
+              data-es="soporte cuando importa"
+              data-en="support when it matters"
+              >soporte cuando importa</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <section class="py-[100px] max-sm:py-[70px]" id="servicios">
+        <div
+          class="max-w-[1160px] w-[calc(100%-40px)] max-sm:w-[calc(100%-28px)] mx-auto"
+        >
+          <div class="max-w-[650px] mb-[38px]">
+            <p
+              class="mb-[12px] text-brand-blue text-[0.76rem] font-extrabold tracking-[0.13em] uppercase"
+              data-es="Capacidades"
+              data-en="Capabilities"
+            >
+              Capacidades
+            </p>
+            <h2
+              class="mb-[16px] font-serif text-[clamp(2.2rem,4vw,4rem)] leading-[1.08] tracking-[-0.035em]"
+              data-es="Resolvemos el problema detrás del problema."
+              data-en="We solve the problem behind the problem."
+            >
+              Resolvemos el problema detrás del problema.
+            </h2>
+            <p
+              class="text-ink-soft"
+              data-es="Una mirada integral a tu operación tecnológica, desde el equipo de trabajo hasta la infraestructura que lo sostiene."
+              data-en="A comprehensive view of your technology operation, from the work device to the infrastructure behind it."
+            >
+              Una mirada integral a tu operación tecnológica, desde el equipo de
+              trabajo hasta la infraestructura que lo sostiene.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-[14px]"
+          >
+            <article
+              class="min-h-[210px] p-[24px] bg-white border border-brand-line rounded-[14px] transition-all hover:-translate-y-[5px] hover:shadow-custom"
+            >
+              <div
+                class="grid w-[40px] h-[40px] place-items-center mb-[25px] text-brand-blue bg-[#e9f2ff] rounded-[8px] text-[1.15rem] font-black"
+              >
+                ▣
+              </div>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="Servidores"
+                data-en="Servers"
+              >
+                Servidores
+              </h3>
+              <p
+                class="text-ink-soft text-[0.9rem]"
+                data-es="Administración, mantenimiento y diagnóstico de tu infraestructura."
+                data-en="Infrastructure administration, maintenance and diagnosis."
+              >
+                Administración, mantenimiento y diagnóstico de tu
+                infraestructura.
+              </p>
+            </article>
+            <article
+              class="min-h-[210px] p-[24px] bg-white border border-brand-line rounded-[14px] transition-all hover:-translate-y-[5px] hover:shadow-custom"
+            >
+              <div
+                class="grid w-[40px] h-[40px] place-items-center mb-[25px] text-brand-blue bg-[#e9f2ff] rounded-[8px] text-[1.15rem] font-black"
+              >
+                ⌁
+              </div>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="Redes"
+                data-en="Networks"
+              >
+                Redes
+              </h3>
+              <p
+                class="text-ink-soft text-[0.9rem]"
+                data-es="Conexiones estables y configuradas para que el trabajo fluya."
+                data-en="Stable, properly configured connections to keep work flowing."
+              >
+                Conexiones estables y configuradas para que el trabajo fluya.
+              </p>
+            </article>
+            <article
+              class="min-h-[210px] p-[24px] bg-white border border-brand-line rounded-[14px] transition-all hover:-translate-y-[5px] hover:shadow-custom"
+            >
+              <div
+                class="grid w-[40px] h-[40px] place-items-center mb-[25px] text-brand-blue bg-[#e9f2ff] rounded-[8px] text-[1.15rem] font-black"
+              >
+                ◈
+              </div>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="Seguridad"
+                data-en="Security"
+              >
+                Seguridad
+              </h3>
+              <p
+                class="text-ink-soft text-[0.9rem]"
+                data-es="Buenas prácticas para proteger información y sistemas."
+                data-en="Best practices to protect your information and systems."
+              >
+                Buenas prácticas para proteger información y sistemas.
+              </p>
+            </article>
+            <article
+              class="min-h-[210px] p-[24px] bg-white border border-brand-line rounded-[14px] transition-all hover:-translate-y-[5px] hover:shadow-custom"
+            >
+              <div
+                class="grid w-[40px] h-[40px] place-items-center mb-[25px] text-brand-blue bg-[#e9f2ff] rounded-[8px] text-[1.15rem] font-black"
+              >
+                ⌘
+              </div>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="Sistemas operativos"
+                data-en="Operating systems"
+              >
+                Sistemas operativos
+              </h3>
+              <p
+                class="text-ink-soft text-[0.9rem]"
+                data-es="Soporte para mantener tus equipos funcionando correctamente."
+                data-en="Support to keep your devices working properly."
+              >
+                Soporte para mantener tus equipos funcionando correctamente.
+              </p>
+            </article>
+            <article
+              class="min-h-[210px] p-[24px] bg-white border border-brand-line rounded-[14px] transition-all hover:-translate-y-[5px] hover:shadow-custom"
+            >
+              <div
+                class="grid w-[40px] h-[40px] place-items-center mb-[25px] text-brand-blue bg-[#e9f2ff] rounded-[8px] text-[1.15rem] font-black"
+              >
+                ▤
+              </div>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="Bases de datos"
+                data-en="Databases"
+              >
+                Bases de datos
+              </h3>
+              <p
+                class="text-ink-soft text-[0.9rem]"
+                data-es="Soporte y administración para tus datos críticos."
+                data-en="Support and administration for your critical data."
+              >
+                Soporte y administración para tus datos críticos.
+              </p>
+            </article>
+            <article
+              class="min-h-[210px] p-[24px] bg-white border border-brand-line rounded-[14px] transition-all hover:-translate-y-[5px] hover:shadow-custom"
+            >
+              <div
+                class="grid w-[40px] h-[40px] place-items-center mb-[25px] text-brand-blue bg-[#e9f2ff] rounded-[8px] text-[1.15rem] font-black"
+              >
+                ↗
+              </div>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="Soporte remoto"
+                data-en="Remote support"
+              >
+                Soporte remoto
+              </h3>
+              <p
+                class="text-ink-soft text-[0.9rem]"
+                data-es="Asistencia ágil sin importar dónde te encuentres."
+                data-en="Fast assistance wherever you are."
+              >
+                Asistencia ágil sin importar dónde te encuentres.
+              </p>
+            </article>
+            <article
+              class="min-h-[210px] p-[24px] bg-white border border-brand-line rounded-[14px] transition-all hover:-translate-y-[5px] hover:shadow-custom"
+            >
+              <div
+                class="grid w-[40px] h-[40px] place-items-center mb-[25px] text-brand-blue bg-[#e9f2ff] rounded-[8px] text-[1.15rem] font-black"
+              >
+                +
+              </div>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="Soporte técnico"
+                data-en="Technical support"
+              >
+                Soporte técnico
+              </h3>
+              <p
+                class="text-ink-soft text-[0.9rem]"
+                data-es="Diagnóstico y solución para tus incidentes diarios."
+                data-en="Diagnosis and solutions for your everyday incidents."
+              >
+                Diagnóstico y solución para tus incidentes diarios.
+              </p>
+            </article>
+            <article
+              class="min-h-[210px] p-[24px] bg-white border border-brand-line rounded-[14px] transition-all hover:-translate-y-[5px] hover:shadow-custom"
+            >
+              <div
+                class="grid w-[40px] h-[40px] place-items-center mb-[25px] text-brand-blue bg-[#e9f2ff] rounded-[8px] text-[1.15rem] font-black"
+              >
+                □
+              </div>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="CCTV"
+                data-en="CCTV"
+              >
+                CCTV
+              </h3>
+              <p
+                class="text-ink-soft text-[0.9rem]"
+                data-es="Instalación y soporte de sistemas de videovigilancia."
+                data-en="Installation and support for video surveillance systems."
+              >
+                Instalación y soporte de sistemas de videovigilancia.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-[100px] max-sm:py-[70px] bg-white" id="planes">
+        <div
+          class="max-w-[1160px] w-[calc(100%-40px)] max-sm:w-[calc(100%-28px)] mx-auto"
+        >
+          <div class="max-w-[650px] mb-[38px]">
+            <p
+              class="mb-[12px] text-brand-blue text-[0.76rem] font-extrabold tracking-[0.13em] uppercase"
+              data-es="Planes de soporte"
+              data-en="Support plans"
+            >
+              Planes de soporte
+            </p>
+            <h2
+              class="mb-[16px] font-serif text-[clamp(2.2rem,4vw,4rem)] leading-[1.08] tracking-[-0.035em]"
+              data-es="Elige el nivel de acompañamiento que necesitas."
+              data-en="Choose the level of support you need."
+            >
+              Elige el nivel de acompañamiento que necesitas.
+            </h2>
+            <p
+              class="text-ink-soft"
+              data-es="Cada operación tiene su ritmo. Hablemos para encontrar una cobertura que tenga sentido para ti."
+              data-en="Every operation has its own rhythm. Let us find coverage that makes sense for you."
+            >
+              Cada operación tiene su ritmo. Hablemos para encontrar una
+              cobertura que tenga sentido para ti.
+            </p>
+          </div>
+          <p
+            class="mt-[-22px] mb-[30px] text-ink-soft text-[0.78rem]"
+            id="rate-note"
+            data-es="Consultando tasa oficial BCV..."
+            data-en="Checking official BCV rate..."
+          >
+            Consultando tasa oficial BCV...
+          </p>
+
+          <div
+            class="grid grid-cols-3 max-sm:grid-cols-1 gap-[18px] items-stretch"
+          >
+            <article
+              class="flex flex-col p-[30px] border border-brand-line rounded-[14px]"
+            >
+              <p
+                class="mb-[28px] text-brand-blue text-[0.73rem] font-black tracking-[0.1em] uppercase"
+                data-es="Entrada"
+                data-en="Starter"
+              >
+                Entrada
+              </p>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="Plan Básico"
+                data-en="Basic Plan"
+              >
+                Plan Básico
+              </h3>
+              <div
+                class="plan-price -mt-[10px] mb-[12px] font-serif text-[2.35rem] font-bold tracking-[-0.03em]"
+                data-usd="20"
+              >
+                $20
+                <small
+                  class="text-ink-soft font-sans text-[0.78rem] font-extrabold tracking-[0.04em]"
+                  >USD</small
+                >
+              </div>
+              <p
+                class="text-ink-soft text-[0.9rem]"
+                data-es="Para resolver necesidades puntuales con respaldo profesional."
+                data-en="For specific needs with professional support."
+              >
+                Para resolver necesidades puntuales con respaldo profesional.
+              </p>
+              <ul
+                class="grid gap-[12px] min-h-[145px] p-0 my-0 mb-[26px] list-none text-ink-soft text-[0.9rem]"
+              >
+                <li
+                  class="before:content-['✓'] before:mr-[9px] before:text-brand-blue before:font-black"
+                  data-es="Soporte técnico"
+                  data-en="Technical support"
+                >
+                  Soporte técnico
+                </li>
+                <li
+                  class="before:content-['✓'] before:mr-[9px] before:text-brand-blue before:font-black"
+                  data-es="Atención remota"
+                  data-en="Remote assistance"
+                >
+                  Atención remota
+                </li>
+                <li
+                  class="before:content-['✓'] before:mr-[9px] before:text-brand-blue before:font-black"
+                  data-es="Diagnóstico de incidentes"
+                  data-en="Incident diagnosis"
+                >
+                  Diagnóstico de incidentes
+                </li>
+              </ul>
+              <button
+                class="plan-button w-full mt-auto inline-flex items-center justify-center gap-[9px] min-h-[48px] px-5 border border-brand-line rounded-[7px] text-[0.94rem] font-extrabold text-ink bg-white hover:border-brand-blue hover:-translate-y-0.5 transition-all"
+                type="button"
+                data-plan="Plan Básico"
+                data-plan-en="Basic Plan"
+                data-es="Solicitar cotización"
+                data-en="Request a quote"
+              >
+                Solicitar cotización
+              </button>
+            </article>
+
+            <article
+              class="plan-card featured flex flex-col p-[30px] bg-brand-blue-dark text-white border-brand-blue-dark rounded-[14px] shadow-custom -translate-y-[10px] max-sm:transform-none"
+            >
+              <p
+                class="plan-label mb-[28px] text-brand-lime text-[0.73rem] font-black tracking-[0.1em] uppercase"
+                data-es="Recomendado"
+                data-en="Recommended"
+              >
+                Recomendado
+              </p>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="Plan Profesional"
+                data-en="Professional Plan"
+              >
+                Plan Profesional
+              </h3>
+              <div
+                class="plan-price -mt-[10px] mb-[12px] font-serif text-[2.35rem] font-bold tracking-[-0.03em]"
+                data-usd="45"
+              >
+                $45
+                <small
+                  class="text-[#d7e7f5] font-sans text-[0.78rem] font-extrabold tracking-[0.04em]"
+                  >USD</small
+                >
+              </div>
+              <p
+                class="text-[0.9rem]"
+                data-es="Para pequeñas empresas que necesitan continuidad y respuesta."
+                data-en="For small businesses that need continuity and fast response."
+              >
+                Para pequeñas empresas que necesitan continuidad y respuesta.
+              </p>
+              <ul
+                class="grid gap-[12px] min-h-[145px] p-0 my-0 mb-[26px] list-none text-[#d7e7f5] text-[0.9rem]"
+              >
+                <li
+                  class="before:content-['✓'] before:mr-[9px] before:text-brand-lime before:font-black"
+                  data-es="Soporte prioritario"
+                  data-en="Priority support"
+                >
+                  Soporte prioritario
+                </li>
+                <li
+                  class="before:content-['✓'] before:mr-[9px] before:text-brand-lime before:font-black"
+                  data-es="Redes y sistemas"
+                  data-en="Networks and systems"
+                >
+                  Redes y sistemas
+                </li>
+                <li
+                  class="before:content-['✓'] before:mr-[9px] before:text-brand-lime before:font-black"
+                  data-es="Mantenimiento preventivo"
+                  data-en="Preventive maintenance"
+                >
+                  Mantenimiento preventivo
+                </li>
+              </ul>
+              <button
+                class="plan-button w-full mt-auto inline-flex items-center justify-center gap-[9px] min-h-[48px] px-5 border border-transparent rounded-[7px] text-[0.94rem] font-extrabold text-white bg-brand-blue hover:bg-brand-blue-dark hover:-translate-y-0.5 transition-all"
+                type="button"
+                data-plan="Plan Profesional"
+                data-plan-en="Professional Plan"
+                data-es="Solicitar cotización"
+                data-en="Request a quote"
+              >
+                Solicitar cotización
+              </button>
+            </article>
+
+            <article
+              class="flex flex-col p-[30px] border border-brand-line rounded-[14px]"
+            >
+              <p
+                class="mb-[28px] text-brand-blue text-[0.73rem] font-black tracking-[0.1em] uppercase"
+                data-es="Cobertura"
+                data-en="Coverage"
+              >
+                Cobertura
+              </p>
+              <h3
+                class="mb-[10px] font-serif text-[1.35rem] leading-[1.08]"
+                data-es="Plan Empresarial"
+                data-en="Business Plan"
+              >
+                Plan Empresarial
+              </h3>
+              <div
+                class="plan-price -mt-[10px] mb-[12px] font-serif text-[2.35rem] font-bold tracking-[-0.03em]"
+                data-usd="90"
+              >
+                $90
+                <small
+                  class="text-ink-soft font-sans text-[0.78rem] font-extrabold tracking-[0.04em]"
+                  >USD</small
+                >
+              </div>
+              <p
+                class="text-ink-soft text-[0.9rem]"
+                data-es="Para operaciones que requieren una mirada tecnológica integral."
+                data-en="For operations that require a comprehensive technology view."
+              >
+                Para operaciones que requieren una mirada tecnológica integral.
+              </p>
+              <ul
+                class="grid gap-[12px] min-h-[145px] p-0 my-0 mb-[26px] list-none text-ink-soft text-[0.9rem]"
+              >
+                <li
+                  class="before:content-['✓'] before:mr-[9px] before:text-brand-blue before:font-black"
+                  data-es="Infraestructura y seguridad"
+                  data-en="Infrastructure and security"
+                >
+                  Infraestructura y seguridad
+                </li>
+                <li
+                  class="before:content-['✓'] before:mr-[9px] before:text-brand-blue before:font-black"
+                  data-es="Servidores y bases de datos"
+                  data-en="Servers and databases"
+                >
+                  Servidores y bases de datos
+                </li>
+                <li
+                  class="before:content-['✓'] before:mr-[9px] before:text-brand-blue before:font-black"
+                  data-es="Soporte personalizado"
+                  data-en="Personalized support"
+                >
+                  Soporte personalizado
+                </li>
+              </ul>
+              <button
+                class="plan-button w-full mt-auto inline-flex items-center justify-center gap-[9px] min-h-[48px] px-5 border border-brand-line rounded-[7px] text-[0.94rem] font-extrabold text-ink bg-white hover:border-brand-blue hover:-translate-y-0.5 transition-all"
+                type="button"
+                data-plan="Plan Empresarial"
+                data-plan-en="Business Plan"
+                data-es="Solicitar cotización"
+                data-en="Request a quote"
+              >
+                Solicitar cotización
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-[100px] max-sm:py-[70px] bg-[#eaf2f9]" id="confianza">
+        <div
+          class="max-w-[1160px] w-[calc(100%-40px)] max-sm:w-[calc(100%-28px)] mx-auto grid grid-cols-2 max-sm:grid-cols-1 gap-[22px]"
+        >
+          <div>
+            <p
+              class="mb-[12px] text-brand-blue text-[0.76rem] font-extrabold tracking-[0.13em] uppercase"
+              data-es="Confianza"
+              data-en="Trust"
+            >
+              Confianza
+            </p>
+            <h2
+              class="mb-[16px] font-serif text-[clamp(2.2rem,4vw,4rem)] leading-[1.08] tracking-[-0.035em]"
+              data-es="Tu operación merece respuestas, no rodeos."
+              data-en="Your operation deserves answers, not runaround."
+            >
+              Tu operación merece respuestas, no rodeos.
+            </h2>
+            <p
+              class="text-ink-soft"
+              data-es="Trabajamos con comunicación clara, seguimiento responsable y soluciones ajustadas a la realidad de cada cliente."
+              data-en="We work with clear communication, responsible follow-up and solutions tailored to each client's reality."
+            >
+              Trabajamos con comunicación clara, seguimiento responsable y
+              soluciones ajustadas a la realidad de cada cliente.
+            </p>
+          </div>
+          <div
+            class="p-[30px] bg-white border border-brand-line rounded-[14px]"
+          >
+            <div class="grid gap-[22px]">
+              <article class="pb-[20px] border-b border-brand-line">
+                <p
+                  class="font-serif text-[1.3rem] mb-2"
+                  data-es="“Rivero Solution nos ayudó a recuperar la estabilidad de nuestra red y a trabajar con más tranquilidad.”"
+                  data-en="“Rivero Solution helped us restore our network stability and work with greater peace of mind."
+                >
+                  “Rivero Solution nos ayudó a recuperar la estabilidad de
+                  nuestra red y a trabajar con más tranquilidad.”
+                </p>
+                <p
+                  class="m-0 text-brand-blue text-[0.78rem] font-black"
+                  data-es="María González · Comercio Andino "
+                  data-en="Maria Gonzalez · Comercio Andino "
+                >
+                  María González · Comercio Andino
+                </p>
+              </article>
+              <article class="pb-[20px] border-b border-brand-line">
+                <p
+                  class="font-serif text-[1.3rem] mb-2"
+                  data-es="“La atención remota fue rápida y clara. Pudimos continuar nuestras operaciones sin complicaciones.”"
+                  data-en="“The remote support was fast and clear. We were able to continue our operations without complications."
+                >
+                  “La atención remota fue rápida y clara. Pudimos continuar
+                  nuestras operaciones sin complicaciones.”
+                </p>
+                <p
+                  class="m-0 text-brand-blue text-[0.78rem] font-black"
+                  data-es="Carlos Rivas · Estudio Norte "
+                  data-en="Carlos Rivas · Estudio Norte "
+                >
+                  Carlos Rivas · Estudio Norte
+                </p>
+              </article>
+              <article class="pb-0 border-b-0">
+                <p
+                  class="font-serif text-[1.3rem] mb-2"
+                  data-es="“Ahora contamos con un mejor seguimiento de nuestros equipos y sistemas de seguridad.”"
+                  data-en="“We now have better monitoring of our equipment and security systems."
+                >
+                  “Ahora contamos con un mejor seguimiento de nuestros equipos y
+                  sistemas de seguridad.”
+                </p>
+                <p
+                  class="m-0 text-brand-blue text-[0.78rem] font-black"
+                  data-es="Laura Méndez · Grupo Horizonte (ficticio)"
+                  data-en="Laura Mendez · Grupo Horizonte "
+                >
+                  Laura Méndez · Grupo Horizonte
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-[100px] max-sm:py-[70px] bg-ink text-white"
+        id="contacto"
+      >
+        <div
+          class="max-w-[1160px] w-[calc(100%-40px)] max-sm:w-[calc(100%-28px)] mx-auto grid grid-cols-[0.8fr_1.2fr] max-md:grid-cols-1 gap-[80px] max-md:gap-[30px] items-start"
+        >
+          <div>
+            <p
+              class="mb-[12px] text-brand-cyan text-[0.76rem] font-extrabold tracking-[0.13em] uppercase"
+              data-es="Hablemos"
+              data-en="Let's talk"
+            >
+              Hablemos
+            </p>
+            <h2
+              class="mb-[16px] font-serif text-[clamp(2.2rem,4vw,4rem)] leading-[1.08] tracking-[-0.035em]"
+              data-es="Cuéntanos qué está pasando."
+              data-en="Tell us what is happening."
+            >
+              Cuéntanos qué está pasando.
+            </h2>
+            <p
+              class="text-[#b8cadb]"
+              data-es="Describe tu necesidad y te ayudaremos a identificar el siguiente paso."
+              data-en="Describe your need and we will help identify the next step."
+            >
+              Describe tu necesidad y te ayudaremos a identificar el siguiente
+              paso.
+            </p>
+            <div class="grid gap-[17px] mt-[28px]">
+              <div class="flex gap-[13px] items-center text-[#dce8f2]">
+                <span class="text-brand-lime font-black">@</span>
+                <span>addison.rivero@gmail.com</span>
+              </div>
+              <div class="flex gap-[13px] items-center text-[#dce8f2]">
+                <span class="text-brand-lime font-black">◉</span>
+                <span>+58 424-5722255</span>
+              </div>
+              <div class="flex gap-[13px] items-center text-[#dce8f2]">
+                <span class="text-brand-lime font-black">⌖</span>
+                <span
+                  data-es="Venezuela · USD / VES"
+                  data-en="Venezuela · USD / VES"
+                  >Venezuela · USD / VES</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="grid grid-cols-2 max-sm:grid-cols-1 gap-[14px] p-[30px] max-sm:p-[20px] bg-white text-ink rounded-[14px]"
+            id="contact-form"
+          >
+            <div class="grid gap-[6px]">
+              <label
+                class="text-[0.78rem] font-black"
+                for="name"
+                data-es="Nombre"
+                data-en="Name"
+                >Nombre</label
+              >
+              <input
+                class="w-full p-[12px_13px] text-ink bg-[#f6f9fc] border border-brand-line rounded-[6px] outline-none focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10"
+                id="name"
+                name="name"
+                type="text"
+                required
+                placeholder="Tu nombre"
+                data-placeholder-es="Tu nombre"
+                data-placeholder-en="Your name"
+              />
+            </div>
+            <div class="grid gap-[6px]">
+              <label
+                class="text-[0.78rem] font-black"
+                for="email"
+                data-es="Correo electrónico"
+                data-en="Email address"
+                >Correo electrónico</label
+              >
+              <input
+                class="w-full p-[12px_13px] text-ink bg-[#f6f9fc] border border-brand-line rounded-[6px] outline-none focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10"
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="tu@correo.com"
+                data-placeholder-es="tu@correo.com"
+                data-placeholder-en="you@email.com"
+              />
+            </div>
+            <div class="grid gap-[6px]">
+              <label
+                class="text-[0.78rem] font-black"
+                for="phone"
+                data-es="Teléfono (opcional)"
+                data-en="Phone (optional)"
+                >Teléfono (opcional)</label
+              >
+              <input
+                class="w-full p-[12px_13px] text-ink bg-[#f6f9fc] border border-brand-line rounded-[6px] outline-none focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10"
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="+58"
+              />
+            </div>
+            <div class="grid gap-[6px]">
+              <label
+                class="text-[0.78rem] font-black"
+                for="service"
+                data-es="Servicio"
+                data-en="Service"
+                >Servicio</label
+              >
+              <select
+                class="w-full p-[12px_13px] text-ink bg-[#f6f9fc] border border-brand-line rounded-[6px] outline-none focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10"
+                id="service"
+                name="service"
+              >
+                <option data-es="Soporte técnico" data-en="Technical support">
+                  Soporte técnico
+                </option>
+                <option data-es="Redes" data-en="Networks">Redes</option>
+                <option data-es="Servidores" data-en="Servers">
+                  Servidores
+                </option>
+                <option data-es="Seguridad informática" data-en="Cybersecurity">
+                  Seguridad informática
+                </option>
+                <option data-es="CCTV" data-en="CCTV">CCTV</option>
+                <option data-es="Cotización de plan" data-en="Plan quote">
+                  Cotización de plan
+                </option>
+              </select>
+            </div>
+            <div class="grid gap-[6px] col-span-2 max-sm:col-span-1">
+              <label
+                class="text-[0.78rem] font-black"
+                for="message"
+                data-es="¿En qué podemos ayudarte?"
+                data-en="How can we help?"
+                >¿En qué podemos ayudarte?</label
+              >
+              <textarea
+                class="w-full min-h-[120px] p-[12px_13px] text-ink bg-[#f6f9fc] border border-brand-line rounded-[6px] outline-none focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 resize-y"
+                id="message"
+                name="message"
+                required
+                placeholder="Cuéntanos brevemente tu necesidad"
+                data-placeholder-es="Cuéntanos brevemente tu necesidad"
+                data-placeholder-en="Briefly tell us what you need"
+              ></textarea>
+            </div>
+            <p
+              class="col-span-2 max-sm:col-span-1 m-0 text-ink-soft text-[0.76rem]"
+              data-es="Este formulario es una demostración y no envía datos a un servidor."
+              data-en="This form is a demo and does not send data to a server."
+            >
+              Este formulario es una demostración y no envía datos a un
+              servidor.
+            </p>
+            <button
+              class="col-span-2 max-sm:col-span-1 w-full inline-flex items-center justify-center gap-[9px] min-h-[48px] px-5 border border-transparent rounded-[7px] text-[0.94rem] font-extrabold text-white bg-ink hover:bg-brand-blue-dark hover:-translate-y-0.5 transition-all"
+              type="submit"
+              data-es="Enviar solicitud →"
+              data-en="Send request →"
+            >
+              Enviar solicitud →
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-[28px] text-[#a9bed0] bg-ink-dark text-[0.82rem]">
+      <div
+        class="max-w-[1160px] w-[calc(100%-40px)] max-sm:w-[calc(100%-28px)] mx-auto flex justify-between max-sm:flex-col gap-[20px]"
+      >
+        <span>© 2026 Rivero Solution</span>
+        <span
+          data-es="Soporte tecnológico para avanzar con confianza."
+          data-en="Technology support to move forward with confidence."
+          >Soporte tecnológico para avanzar con confianza.</span
+        >
+      </div>
+    </footer>
+
+    <!-- Botón de WhatsApp flotante -->
+    <a
+      href="https://wa.me/584245722255?text=Hola%2C%20Pregunta%20sobre%20nuestros%20planes%20y%20servicios%2C%20estamos%20para%20darles%20cualquier%20informacion."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed left-[20px] bottom-[20px] z-20 flex items-center justify-center w-[60px] h-[60px] bg-[#25D366] rounded-full shadow-lg hover:scale-105 transition-transform duration-200"
+      aria-label="Contactar por WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="32"
+        height="32"
+        fill="white"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <div
+      class="fixed right-[20px] bottom-[20px] z-20 max-w-[330px] p-[15px_18px] text-white bg-ink border-l-4 border-brand-lime rounded-[6px] shadow-custom opacity-0 pointer-events-none translate-y-[15px] transition-all duration-300 [&.show]:opacity-100 [&.show]:pointer-events-auto [&.show]:translate-y-0"
+      id="toast"
+      role="status"
+      aria-live="polite"
+    ></div>
+
+    <script>
+      const menuToggle = document.querySelector("#menu-toggle");
+      const mainNav = document.querySelector("#main-nav");
+      const toast = document.querySelector("#toast");
+      const contactForm = document.querySelector("#contact-form");
+      const serviceField = document.querySelector("#service");
+      let toastTimer;
+      let currentLanguage = "es";
+      let vesRate = null;
+
+      function updateRateNote(messageEs, messageEn) {
+        const note = document.querySelector("#rate-note");
+        note.dataset.es = messageEs;
+        note.dataset.en = messageEn;
+        note.textContent = currentLanguage === "en" ? messageEn : messageEs;
+      }
+
+      function updatePlanPrices(currency) {
+        document.querySelectorAll(".plan-price").forEach((price) => {
+          const usd = Number(price.dataset.usd);
+          const amount = currency === "VES" && vesRate ? usd * vesRate : usd;
+
+          if (currency === "VES" && !vesRate) {
+            price.innerHTML =
+              '<small class="text-ink-soft font-sans text-[0.78rem] font-extrabold tracking-[0.04em]">Bs. --</small>';
+            return;
+          }
+
+          const formatted = new Intl.NumberFormat(
+            currentLanguage === "en" ? "en-US" : "es-VE",
+          ).format(amount);
+
+          // Verificación segura sin depender de .plan-card
+          const isFeatured = price
+            .closest("article")
+            ?.classList.contains("featured");
+          const smallClass = isFeatured ? "text-[#d7e7f5]" : "text-ink-soft";
+
+          price.innerHTML = `${currency === "VES" ? "Bs. " : "$"}${formatted} <small class="${smallClass} font-sans text-[0.78rem] font-extrabold tracking-[0.04em]">${currency}</small>`;
+        });
+      }
+
+      async function loadBcvRate() {
+        try {
+          const response = await fetch(
+            "https://ve.dolarapi.com/v1/dolares/oficial",
+            { cache: "no-store" },
+          );
+          if (!response.ok) throw new Error("BCV rate unavailable");
+          const data = await response.json();
+          vesRate = Number(data.venta || data.promedio || data.valor);
+          if (!Number.isFinite(vesRate) || vesRate <= 0)
+            throw new Error("Invalid BCV rate");
+          const formattedRate = new Intl.NumberFormat(
+            currentLanguage === "en" ? "en-US" : "es-VE",
+            { minimumFractionDigits: 2, maximumFractionDigits: 2 },
+          ).format(vesRate);
+          updateRateNote(
+            `Tasa oficial BCV: Bs. ${formattedRate} por USD · Actualizada hoy`,
+            `Official BCV rate: Bs. ${formattedRate} per USD · Updated today`,
+          );
+          updatePlanPrices(document.querySelector("#currency").value);
+        } catch (error) {
+          console.log(error);
+          updateRateNote(
+            "No se pudo consultar la tasa BCV. Intenta actualizar la página.",
+            "The BCV rate could not be retrieved. Try refreshing the page.",
+          );
+          updatePlanPrices(document.querySelector("#currency").value);
+        }
+      }
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = mainNav.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      mainNav.querySelectorAll("a").forEach((link) =>
+        link.addEventListener("click", () => {
+          mainNav.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        }),
+      );
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.add("show");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove("show"), 3500);
+      }
+
+      document.querySelectorAll(".plan-button").forEach((button) =>
+        button.addEventListener("click", () => {
+          serviceField.value = "Cotización de plan";
+          const planName =
+            currentLanguage === "en"
+              ? button.dataset.planEn
+              : button.dataset.plan;
+          document.querySelector("#message").value =
+            currentLanguage === "en"
+              ? `I am interested in the ${planName}.`
+              : `Me interesa el ${planName}.`;
+          document
+            .querySelector("#contacto")
+            .scrollIntoView({ behavior: "smooth" });
+          document.querySelector("#name").focus({ preventScroll: true });
+        }),
+      );
+
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        showToast(
+          currentLanguage === "en"
+            ? "Request prepared. Configure your email or WhatsApp to activate sending."
+            : "Solicitud preparada. Configura tu correo o WhatsApp para activar el envío.",
+        );
+        contactForm.reset();
+      });
+
+      document
+        .querySelector("#currency")
+        .addEventListener("change", (event) => {
+          updatePlanPrices(event.target.value);
+          showToast(
+            currentLanguage === "en"
+              ? `Currency selected: ${event.target.value}. VES uses the official BCV rate.`
+              : `Moneda seleccionada: ${event.target.value}. VES usa la tasa oficial del BCV.`,
+          );
+        });
+
+      document
+        .querySelector("#language")
+        .addEventListener("change", (event) => {
+          currentLanguage = event.target.value;
+          document.documentElement.lang = currentLanguage;
+          document.querySelectorAll("[data-es]").forEach((element) => {
+            element.textContent = element.dataset[currentLanguage];
+          });
+          document
+            .querySelectorAll("[data-placeholder-es]")
+            .forEach((element) => {
+              element.placeholder =
+                element.dataset[
+                  `placeholder${currentLanguage === "es" ? "Es" : "En"}`
+                ];
+            });
+          document.querySelectorAll("option[data-es]").forEach((option) => {
+            option.textContent = option.dataset[currentLanguage];
+          });
+          updatePlanPrices(document.querySelector("#currency").value);
+        });
+
+      loadBcvRate();
+    </script>
+  </body>
+</html>
